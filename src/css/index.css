@@ -1,0 +1,146 @@
+/* Normalizer */
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(214, 214, 214);
+}
+
+#container {
+    box-shadow: rgb(0, 0, 0, 0.5) 4px 4px 8px;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1250px;
+}
+
+#header {
+    width: auto;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+#headertext {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#start {
+    color: white;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.link {
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: left;
+    color: rgb(0, 0, 0, 0.8);
+    text-wrap: nowrap;
+}
+
+.linkbutton {
+    background-color: rgb(64, 255, 191);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.linkbutton:hover {
+    background-color: rgb(164, 255, 225);
+    box-shadow: rgb(255, 255, 255) 0px 2px 8px;
+    transform: translateY(-2px);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#main {
+    height: auto;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+#images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+picture {
+
+}
+
+picture:hover {
+    opacity: 80%;
+    box-shadow: yellow 0px 0px 40px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.0rem;
+    line-height: 6.0rem;
+    text-align: left;
+    color: rgb(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+#boil {
+    color: rgb(218, 0, 0);
+}
+
+.brod {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: left;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+#footer {
+    width: auto;
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#footertext {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#name {
+    color: rgb(164, 255, 225);
+}
