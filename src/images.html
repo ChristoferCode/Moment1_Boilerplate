@@ -6,6 +6,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/imageflip.css">
+
 
     <script src="js/main.js" type="module"></script>
 
@@ -39,29 +41,19 @@
 
                     <ul id="menu">
                         <li>
-                            <div class="linkbutton">
-                                <a href="images.html" class="link">Bilder</a>
-                            </div>
+                            <a href="images.html" class="link"><div class="linkbuttonactive">Bilder</div></a>
                         </li>
                         <li>
-                            <div class="linkbutton">
-                                <a href="workprogress.html" class="link">Arbetsprocess</a>
-                            </div>
+                            <a href="workprogress.html" class="link"><div class="linkbutton">Arbetsprocess</div></a>
                         </li>
                         <li>
-                            <div class="linkbutton">
-                                <a href="X" class="link">Link 3</a>
-                            </div>
+                            <a href="X" class="link"><div class="linkbutton">Link 3</div></a>
                         </li>
                         <li>
-                            <div class="linkbutton">
-                                <a href="X" class="link">Link 4</a>
-                            </div>
+                            <a href="X" class="link"><div class="linkbutton">Link 4</div></a>
                         </li>
                         <li>
-                            <div class="linkbutton">
-                                <a href="X" class="link">Link 5</a>
-                            </div>
+                            <a href="X" class="link"><div class="linkbutton">Link 5</div></a>
                         </li>
                     </ul>
                 </nav>            
@@ -70,37 +62,131 @@
         <section>
             <div id="main">
                 <h1><span id="boil">Bilder</span> som har optimerats</h1>
+
+                <div class="brod">
+                    <p>Hovra över bilderna för att se vilka optimeringar som gjorts.</p>
+                </div>
                 
                 <div id="images">
-                    <picture>
-                        <source srcset="images/drink1.jpg?as=webp&width=300&height=500" type="image/webp" />
-                        <img src="images/drink1.jpg?width=300&height=500" alt="röd drink med skivor av blodapelsin intill" />
-                    </picture>
 
-                    <picture>
-                        <source srcset="images/drink2.jpg?as=avif&width=300&height=500" type="image/avif" />
-                        <img src="images/drink2.jpg?width=300&height=500" alt="orange drink med apelsinskiva" />
-                    </picture>
 
-                    <picture>
-                        <source srcset="images/drink3.jpg?as=avif&width=300&height=500" type="image/avif" />
-                        <img src="images/drink3.jpg?width=300&height=500" alt="röd och orange drink med apelsinskiva" />
-                    </picture>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
 
-                    <picture>
-                        <source srcset="images/drink4.jpg?as=avif&width=300&height=500" type="image/avif" />
-                        <img src="images/drink4.jpg?width=300&height=500" alt="gul drink med citronskiva" />
-                    </picture>
+                                <picture>
+                                    <source srcset="images/drink1.jpg?as=webp&width=300&height=500" type="image/webp" />
+                                    <img src="images/drink1.jpg?width=300&height=500" alt="röd drink med skivor av blodapelsin intill" />
+                                </picture>       
+                            
+                            </div>
 
-                    <picture>
-                        <source srcset="images/drink5.jpg?as=avif&width=300&height=500" type="image/avif" />
-                        <img src="images/drink5.jpg?width=300&height=500" alt="gul drink med ananas" />
-                    </picture>
+                            <div class="flip-box-back1">
+                                <h2 class="flip">From jpg to webp</h2>
+                                <p class="fliptext">Downsized from 1920px to 300px and from 267kB to 15kB</p>
+                            </div>
 
-                    <picture>
-                        <source srcset="images/drink6.jpg?as=avif&width=300&height=500" type="image/avif" />
-                        <img src="images/drink6.jpg?width=300&height=500" alt="grön drink med citronskiva" />
-                    </picture>
+                        </div>
+                    </div>
+                  
+
+                    <div class="flip-box2">
+                        <div class="flip-box-inner2">
+                            <div class="flip-box-front2">
+
+                                <picture>
+                                    <source srcset="images/drink2.jpg?as=avif&width=300&height=500" type="image/avif" />
+                                    <img src="images/drink2.jpg?width=300&height=500" alt="orange drink med apelsinskiva" />
+                                </picture>
+
+                            </div>
+
+                            <div class="flip-box-back2">
+                                <h2 class="flip">From jpg to avif</h2>
+                                <p class="fliptext">Downsized from 1920px to 300px and from 496kB to 8kB</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                               
+                                <picture>
+                                    <source srcset="images/drink3.jpg?as=avif&width=300&height=500" type="image/avif" />
+                                    <img src="images/drink3.jpg?width=300&height=500" alt="röd och orange drink med apelsinskiva" />
+                                </picture>
+
+                            </div>
+
+                            <div class="flip-box-back1">
+                                <h2 class="flip">From jpg to avif</h2>
+                                <p class="fliptext">Downsized from 1920px to 300px and from 329kB to 8kB</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="flip-box2">
+                        <div class="flip-box-inner2">
+                            <div class="flip-box-front2">
+                               
+                                <picture>
+                                    <source srcset="images/drink4.jpg?as=avif&width=300&height=500" type="image/avif" />
+                                    <img src="images/drink4.jpg?width=300&height=500" alt="gul drink med citronskiva" />
+                                </picture>
+
+                            </div>
+
+                            <div class="flip-box-back2">
+                                <h2 class="flip">From jpg to avif</h2>
+                                <p class="fliptext">Downsized from 1920px to 300px and from 229kB to 7kB</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+
+                                <picture>
+                                    <source srcset="images/drink5.jpg?as=avif&width=300&height=500" type="image/avif" />
+                                    <img src="images/drink5.jpg?width=300&height=500" alt="gul drink med ananas" />
+                                </picture>
+
+                            </div>
+
+                            <div class="flip-box-back1">
+                                <h2 class="flip">From jpg to avif</h2>
+                                <p class="fliptext">Downsized from 1920px to 300px and from 454kB to 8kB</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="flip-box2">
+                        <div class="flip-box-inner2">
+                            <div class="flip-box-front2">
+                        
+                                <picture>
+                                    <source srcset="images/drink6.jpg?as=avif&width=300&height=500" type="image/avif" />
+                                    <img src="images/drink6.jpg?width=300&height=500" alt="grön drink med citronskiva" />
+                                </picture>
+
+                            </div>
+
+                            <div class="flip-box-back2">
+                                <h2 class="flip">From jpg to avif</h2>
+                                <p class="fliptext">Downsized from 1920px to 300px and from 302kB to 6kB</p>
+                            </div>
+                        </div>
+                        </div>
+
                 </div>
 
             </div>

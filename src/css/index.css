@@ -166,7 +166,29 @@ transform: translateX(-200%) scaleY(1000%);
     border-radius: 10px;
 }
 
+.linkbuttonactive {
+    background-color: rgb(147, 255, 64);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
 .linkbutton:hover {
+    background-color: rgb(164, 255, 225);
+    box-shadow: rgb(255, 255, 255) 0px 2px 8px;
+    transform: translateY(-2px);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.linkbuttonactive:hover {
+    background-color: rgb(187, 255, 136);
+    box-shadow: rgb(255, 255, 255) 0px 2px 8px;
+    transform: translateY(-2px);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.linkbutton:focus {
     background-color: rgb(164, 255, 225);
     box-shadow: rgb(255, 255, 255) 0px 2px 8px;
     transform: translateY(-2px);
