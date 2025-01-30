@@ -1,3 +1,5 @@
+/* Kod inspirerad från https://www.w3schools.com/howto/howto_css_flip_image.asp */
+
 .flip-box1 {
     background-color: transparent;
     width: 300px;
@@ -101,4 +103,14 @@
     line-height: 2.4rem;
     text-align: center;
     color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #from {
+    color: red;
+  }
+
+  #to {
+    color: rgb(164, 255, 225);
   }
