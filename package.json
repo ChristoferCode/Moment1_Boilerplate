@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Denna uppgift går ut på att:\r   * *skapa en \"boilerplate\" för webbutveckling som jag kan ha som mall för kommande webbplatser jag skapar*\r   * *att jag skapar en automatiserad utvecklingsmiljö baserad på Git och NodeJs så att jag endast via uppdatering till Github kan publicera mina uppdateringar på min webbplats*\r   * *att jag använder Parcel för att bygga och förenkla min webbplats. CSS, HTML och JavaScript minifieras och transpileras för att minska filstorlekar och ladditd av min webbplats. Även bildfiler optimeras automatiskt.*",
   "source": "src/index.html",
+  "browserlist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
