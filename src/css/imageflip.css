@@ -107,10 +107,10 @@
     margin-right: 20px;
   }
 
-  #from {
+  .from {
     color: red;
   }
 
-  #to {
+  .to {
     color: rgb(164, 255, 225);
   }
