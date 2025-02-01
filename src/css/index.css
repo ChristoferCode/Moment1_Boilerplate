@@ -158,7 +158,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    transform: translateX(-200%) scaleY(1000%);
+    transform: translateX(-200%) scaleY(10);
     opacity: 0%;
     background-color: red;
     display: block;
@@ -189,7 +189,7 @@ body {
 }
 
 #close-menu-icon .bar2 {
-transform: translateX(-200%) scaleY(1000%);
+transform: translateX(-200%) scaleY(10);
     transition: 0.5s;
     opacity: 0%;
     background-color: red;
@@ -563,7 +563,7 @@ p {
     }
 
     to {
-        transform: translateX(-200%) scaleY(1000%);
+        transform: translateX(-200%) scaleY(10);
         opacity: 0%;
         background-color: red;
     }
@@ -624,7 +624,7 @@ p {
 
  @keyframes hamburgerbar2close {
     from {
-        transform: translateX(-200%) scaleY(1000%);
+        transform: translateX(-200%) scaleY(10);
         opacity: 0%;
         background-color: red;
         height: 3px;
@@ -647,7 +647,7 @@ p {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        transform: translateX(0%) scaleY(100%);
+        transform: translateX(0%) scaleY(1);
         opacity: 100%;
     }
  }
