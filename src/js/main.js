@@ -17,15 +17,18 @@ let bar3closeEl = document.querySelector(".bar3close");
 
 
 
-openMenuEl.addEventListener("click", openMenu);
-closeMenuEl.addEventListener("click", closeMenu);
+openMenuEl.addEventListener("click", toggleMenu);
+closeMenuEl.addEventListener("click", toggleMenu);
 
 
 
-function openMenu() {
+function toggleMenu() {
 
     if (window.getComputedStyle(menuEl).display === "none" && window.matchMedia("(max-width: 800px)").matches) {
         menuEl.style.display = "flex";
+        openMenuEl.style.display = "flex";
+        closeMenuEl.style.display = "none";
+
         openMenuEl.style.animationPlayState = "running";
         bar1El.style.animationPlayState = "running";
         bar2El.style.animationPlayState = "running";
@@ -33,17 +36,19 @@ function openMenu() {
         menutextopenEl.style.animationPlayState = "running";
         menutextopenEl.innerHTML = "Stäng";
 
+        closeMenuEl.style.animationPlayState = "paused";
+        bar1closeEl.style.animationPlayState = "paused";
+        bar2closeEl.style.animationPlayState = "paused";
+        bar3closeEl.style.animationPlayState = "paused";
+        menutextcloseEl.style.animationPlayState = "paused";
+      
+
+
     } else if (window.getComputedStyle(menuEl).display === "flex" && window.matchMedia("(max-width: 800px)").matches) {
-        closeMenuEl.style.display = "flex";
-        openMenuEl.style.display = "none";
-    }
-}
-
-
-function closeMenu() {
-
-    if (window.getComputedStyle(menuEl).display === "flex" && window.matchMedia("(max-width: 800px)").matches) {
         menuEl.style.display = "none";
+        openMenuEl.style.display = "none";
+        closeMenuEl.style.display = "flex";
+
         closeMenuEl.style.animationPlayState = "running";
         bar1closeEl.style.animationPlayState = "running";
         bar2closeEl.style.animationPlayState = "running";
@@ -51,11 +56,92 @@ function closeMenu() {
         menutextcloseEl.style.animationPlayState = "running";
         menutextcloseEl.innerHTML = "Meny";
 
-    } else if (window.getComputedStyle(menuEl).display === "none" && window.matchMedia("(max-width: 800px)").matches) {
-        closeMenuEl.style.display = "none";
-        openMenuEl.style.display = "flex";
-    }
+        openMenuEl.style.animationPlayState = "paused";
+        bar1El.style.animationPlayState = "paused";
+        bar2El.style.animationPlayState = "paused";
+        bar3El.style.animationPlayState = "paused";
+        menutextopenEl.style.animationPlayState = "paused";
+
+    } 
+
+    window.addEventListener("resize", noHamburger);
 }
+
+
+function noHamburger() {
+    
+    if (window.matchMedia("(min-width: 800px)").matches) {
+        menuEl.style.display = "flex";
+        openMenuEl.style.display = "none";
+        closeMenuEl.style.display = "none";
+
+    } else {
+        menuEl.style.display = "none";
+        openMenuEl.style.display = "none";
+        closeMenuEl.style.display = "flex";
+        closeMenuEl.style.animationPlayState = "running";
+        bar1closeEl.style.animationPlayState = "running";
+        bar2closeEl.style.animationPlayState = "running";
+        bar3closeEl.style.animationPlayState = "running";
+        menutextcloseEl.style.animationPlayState = "running";
+        menutextcloseEl.innerHTML = "Meny";
+    }
+
+
+
+
+    // if (window.matchMedia("(min-width: 800px)").matches) {
+    //     menuEl.style.display = "flex";
+    //     openMenuEl.style.display = "none";
+    //     closeMenuEl.style.display = "none";
+    // } else if (window.getComputedStyle(openMenuEl).display === "flex" && window.matchMedia("(max-width: 800px)").matches) {
+    //     menuEl.style.display = "none";
+    //     openMenuEl.style.display = "flex";
+    //     closeMenuEl.style.display = "none";
+    // } else if (window.getComputedStyle(closeMenuEl).display === "flex" && window.matchMedia("(max-width: 800px)").matches) {
+    //     menuEl.style.display = "flex";
+    //     openMenuEl.style.display = "none";
+    //     closeMenuEl.style.display = "flex";
+    // }
+}
+
+
+
+
+// function openMenu() {
+
+//     if (window.getComputedStyle(menuEl).display === "none" && window.matchMedia("(max-width: 800px)").matches) {
+//         menuEl.style.display = "flex";
+//         openMenuEl.style.animationPlayState = "running";
+//         bar1El.style.animationPlayState = "running";
+//         bar2El.style.animationPlayState = "running";
+//         bar3El.style.animationPlayState = "running";
+//         menutextopenEl.style.animationPlayState = "running";
+//         menutextopenEl.innerHTML = "Stäng";
+
+//     } else if (window.getComputedStyle(menuEl).display === "flex" && window.matchMedia("(max-width: 800px)").matches) {
+//         closeMenuEl.style.display = "flex";
+//         openMenuEl.style.display = "none";
+//     }
+// }
+
+
+// function closeMenu() {
+
+//     if (window.getComputedStyle(menuEl).display === "flex" && window.matchMedia("(max-width: 800px)").matches) {
+//         menuEl.style.display = "none";
+//         closeMenuEl.style.animationPlayState = "running";
+//         bar1closeEl.style.animationPlayState = "running";
+//         bar2closeEl.style.animationPlayState = "running";
+//         bar3closeEl.style.animationPlayState = "running";
+//         menutextcloseEl.style.animationPlayState = "running";
+//         menutextcloseEl.innerHTML = "Meny";
+
+//     } else if (window.getComputedStyle(menuEl).display === "none" && window.matchMedia("(max-width: 800px)").matches) {
+//         closeMenuEl.style.display = "none";
+//         openMenuEl.style.display = "flex";
+//     }
+// }
 
 // function resetMenu() {
 //     openMenuEl.style.animationPlayState = "paused";
