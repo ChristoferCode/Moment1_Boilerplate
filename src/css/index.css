@@ -278,7 +278,7 @@ transform: translateX(-200%) scaleY(10);
     border: 2px solid rgb(64, 255, 191);
 }
 
-.linkbutton:hover {
+.linkbutton:hover, .linkbutton:focus {
     background-color: rgb(164, 255, 225);
     box-shadow: rgb(255, 255, 255) 0px 2px 8px;
     transform: translateY(-3px);
@@ -289,7 +289,7 @@ transform: translateX(-200%) scaleY(10);
     
 }
 
-.linkbuttonactive:hover {
+.linkbuttonactive:hover, .linkbuttonactive:focus {
     background-color: rgb(164, 255, 225);
     box-shadow: rgb(255, 255, 255) 0px 2px 8px;
     transform: translateY(-3px);
@@ -340,7 +340,7 @@ picture {
 
 }
 
-.drink:hover {
+.drink:hover, .drink:focus {
     opacity: 80%;
     box-shadow: yellow 0px 0px 40px;
 }
