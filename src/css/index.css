@@ -330,6 +330,7 @@ transform: translateX(-200%) scaleY(10);
     display: flex;
     justify-content: center;
     margin-top: -1px;
+    width: 100%;
 }
 
 .startimage {
